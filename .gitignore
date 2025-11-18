@@ -1,0 +1,33 @@
+# Ignore common files
+node_modules/
+.env
+.env.local
+*.log
+build/
+dist/
+.DS_Store
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+
+# Backend specific
+backend/node_modules/
+backend/.env
+
+# Frontend specific
+heritage_recipes_lite/build/
+heritage_recipes_lite/.dart_tool/
+heritage_recipes_lite/.packages
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archive files
+*.zip
+*.tar.gz

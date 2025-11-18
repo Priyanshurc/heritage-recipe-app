@@ -1,0 +1,3 @@
+priyanshurc987_db_user
+0NqhX8ePP1XFqyvu
+mongodb+srv://priyanshurc987_db_user:0NqhX8ePP1XFqyvu@cluster0.ggkrbcj.mongodb.net/?appName=Cluster0
