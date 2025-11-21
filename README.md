@@ -1,6 +1,14 @@
-Recipe App - Flutter + MongoDB
+# Heritage Recipe App - Flutter + MongoDB
 
-A full-stack recipe application built with Flutter for the frontend and Node.js/Express with MongoDB for the backend.
+> A full-stack recipe application celebrating heritage recipes through a modern Flutter interface, powered by Node.js/Express and MongoDB.
+
+## 📖 **NEW? Start Here → [DOCS.md](DOCS.md)** 
+
+Not sure which docs to read? **[DOCS.md](DOCS.md)** is your navigation hub with links to the right guide for your needs.
+
+---
+
+## ✨ Features
 Features
 
     ✅ User authentication (login/register)
@@ -93,115 +101,3 @@ cd lib
 bash
 
 flutter pub get
-
-    Update API URL:
-        Open lib/services/api_service.dart
-        Update baseUrl to your backend URL:
-            For Android Emulator: http://10.0.2.2:5000/api
-            For iOS Simulator: http://localhost:5000/api
-            For physical device: http://YOUR_IP:5000/api
-    Run the app:
-
-bash
-
-# For development
-flutter run
-
-# For specific device
-flutter run -d chrome  # Web
-flutter run -d android # Android
-flutter run -d ios     # iOS
-
-API Endpoints
-Authentication
-
-    POST /api/auth/register - Register new user
-    POST /api/auth/login - Login user
-
-Recipes
-
-    GET /api/recipes - Get all recipes (with search & filter)
-    GET /api/recipes/:id - Get single recipe
-    POST /api/recipes - Create new recipe
-    PUT /api/recipes/:id - Update recipe
-    DELETE /api/recipes/:id - Delete recipe
-    POST /api/recipes/:id/favorite - Toggle favorite
-    GET /api/recipes/favorites - Get user's favorite recipes
-
-Project Structure
-Backend
-
-backend/
-├── server.js           # Entry point
-├── config/
-│   └── db.js          # MongoDB connection
-├── models/
-│   ├── User.js        # User schema
-│   └── Recipe.js      # Recipe schema
-├── routes/
-│   ├── auth.js        # Auth routes
-│   └── recipes.js     # Recipe routes
-├── scripts/
-│   └── importCSV.js   # CSV import script
-└── .env               # Environment variables
-
-Flutter
-
-lib/
-├── main.dart
-├── screens/
-│   ├── login_screen.dart
-│   ├── home_screen.dart
-│   ├── add_recipe_screen.dart
-│   └── recipe_details_screen.dart
-├── widgets/
-│   └── recipe_card.dart
-├── models/
-│   └── recipe_model.dart
-└── services/
-    └── api_service.dart
-
-CSV Import Format
-
-Your CSV should have these columns (all required except imageUrl):
-
-Column	Description	Example
-title	Recipe name	"Chocolate Cake"
-description	Short description	"Rich and moist chocolate cake"
-ingredients	Pipe-separated list	"Flour|Sugar|Cocoa|Eggs"
-instructions	Pipe-separated steps	"Mix dry ingredients|Add wet|Bake 30min"
-category	Category name	"Dessert"
-prepTime	Prep time in minutes	15
-cookTime	Cook time in minutes	30
-servings	Number of servings	8
-imageUrl	Image URL (optional)	"https://example.com/cake.jpg"
-
-Testing
-
-    Start the backend server
-    Test API endpoints using Postman or curl
-    Run the Flutter app and test all features
-
-Common Issues
-
-Issue: Connection refused
-
-    Make sure MongoDB is running
-    Check if backend server is running on correct port
-    Verify API URL in Flutter app matches backend URL
-
-Issue: CSV import fails
-
-    Check CSV format matches the example
-    Ensure all required columns are present
-    Use | (pipe) to separate array values
-
-Issue: Authentication errors
-
-    Verify JWT_SECRET is set in .env
-    Check token is being saved in SharedPreferences
-    Ensure Authorization header is being sent
-
-License
-
-MIT License
