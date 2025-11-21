@@ -2,6 +2,12 @@
 
 Welcome to Heritage Recipe App! Use this guide to find the right documentation for your needs.
 
+## ✅ Is This Ready for Local Setup?
+
+**Yes!** See **[LOCAL_SETUP_READY.md](LOCAL_SETUP_READY.md)** — Complete verification that your code requires **only MongoDB** as an external dependency. No API keys, no third-party services.
+
+---
+
 ## 🚀 I Just Forked This Repo
 
 **Start here:** 👉 **[QUICKSTART.md](QUICKSTART.md)** (2 min read)
@@ -185,6 +191,7 @@ A: Edit `heritage_recipes_lite/lib/services/api_service.dart` → `baseUrl`
 | **[SETUP.md](SETUP.md)** | Detailed step-by-step setup for all platforms | First-time users |
 | **[QUICKSTART.md](QUICKSTART.md)** | Quick reference & commands | Impatient users |
 | **[FORKING.md](FORKING.md)** | Project structure & contributing | Contributors |
+| **[LOCAL_SETUP_READY.md](LOCAL_SETUP_READY.md)** | Verification that code is ready for local setup | Everyone interested in dependencies |
 | **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** | Production deployment | DevOps/Deployment |
 | **[backend/BACKEND_SETUP.md](backend/BACKEND_SETUP.md)** | Backend-specific setup | Backend devs |
 
